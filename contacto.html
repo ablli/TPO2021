@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tienda</title>
+<link rel="stylesheet" href="css/stilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" type="image/png" sizes="16x16" href="/icono/favicon-16x16.png">
+<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div>
+                <h1 class="main-header__title">RASM</h1>
+                <span class="icon-menu fas fa-bars" id="btn-menu"></span>
+                <nav class="main-nav">
+                    <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="/index.html" class="menu__link">INICIO</a></li>
+                    <li class="menu__item"><a href="/contacto.html" class="menu__link">CONTACTO</a></li>
+                    <li class="menu__item"><a href="/acceso.html" class="menu__link">ACCESO</a></li>    
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div class="main-header__container">
+            <span class="main-header__txt">Atencion al cliente</span>
+            <p class="main-header__txt"><i class="fas fa-phone-square-alt"></i> Llamar:2604239989</p>
+        </div>
+        <div class="main-header__container">
+            <i class="fas fa-user"></i>
+            <a href=""class="main-header__btn" >Carrito<i class="fas fa-shopping-cart"></i></a>
+            <input type="search" class="main-heder__input" placeholder="Buscar productos" ><i class="fas fa-search"></i>
+        </div>
+        </div>
+        <!-- Contaco -->
+      <form
+      method="POST"
+      action=""
+      class="needs-validation"
+      novalidate
+    >
+      <div class="form-row mt-5">
+        <div class="col-md-4 mb-3">
+          <label for="validarNombre">Nombre:<span class="red">*</span></label>
+          <input
+            type="text"
+            class="form-control"
+            id="validarNombre"
+            name="validarNombre"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validarApellidos"
+            >Apellidos:<span class="red">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="validarApellidos"
+            name="validarApellidos"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validarEmail">Email:<span class="red">*</span></label>
+          <input
+            type="email"
+            class="form-control"
+            id="validarEmail"
+            name="validarEmail"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validarTelefono">Teléfono:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="validarTelefono"
+            name="validarTelefono"
+            max="999999999"
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validarAsunto">Asunto:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validarAsunto"
+            name="validarAsunto"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="validationMensaje"
+          >Mensaje:<span class="red">*</span></label
+        >
+        <textarea
+          class="form-control"
+          id="validationMensaje"
+          name="validationMensaje"
+          rows="3"
+          min="25"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group mb-10">
+        <button class="btn btn-primary" type="submit" name="submit">
+          Enviar
+        </button>
+        <button class="btn btn-success" type="reset" name="reset">
+          Limpiar
+        </button>
+      </div>
+    </form>
+  </main>
+
+           <script src="js/menu.js"></script>
+           <script src="js/bootstrap.min.js"></script>
+           <script src="js/validation.js"></script>
+       
+<!-- Footer -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Descarga nuestra aplicación.</h3>
+          <p>Descargar la aplicación para teléfonos móviles Android e IOS.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="play-store" />
+            <img src="images/app-store.png" alt="app-store" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png" alt="white" />
+          <p>
+            Nuestro propósito es hacer que el placer y los beneficios de los
+            deportes sean accesibles para muchos.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Enlaces útiles</h3>
+          <ul>
+            <li>Cupones</li>
+            <li>Blog</li>
+            <li>Política de Devoluciones</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Síguenos</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright 2021 - EleaStore</p>
+    </div>
+  </footer>
+</body>
